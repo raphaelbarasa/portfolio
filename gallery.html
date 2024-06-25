@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://kit.fontawesome.com/94779e1991.js" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+
+    <div class="full-img" id="fullImgBox" >
+      <img src="image2/img1.jpg" id="fullImg">
+      <span onclick="closeFullImg()" >X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="image2/work-1.png" onclick="openFullImg(this.src)" >
+      <img src="image2/work-2.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+      <img src="image2/waiting.png" onclick="openFullImg(this.src)">
+    
+    </div>
+
+    <a href="home.html" class="btn">Home</a>
+
+    <div class="copyright">
+      <p>Copyright by Raphael Barasa <i class="fa-regular fa-copyright"></i> 2024</p>
+    </div>
+
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+  fullImgBox.style.display = "flex";
+  fullImg.src = pic;
+}
+
+function closeFullImg(){
+  fullImgBox.style.display = "none";
+}
+
+</script>
+</body>
+</html>
