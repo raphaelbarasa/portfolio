@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raphael Barasa - Portfolio Website</title>
   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="slide.css">
    <link rel="icon" href="images/R.png" type="image/x-icon"/>
   <script src="https://kit.fontawesome.com/94779e1991.js" crossorigin="anonymous"></script> 
 </head>
@@ -97,43 +98,32 @@
         </div>
     </div>
 </div>
-<!--------------portfolio--------->
+<!-----------------------------------portfolio------------------------------------------->
+<div id="portfolio">
 <div id="portfolio">
   <div class="container">
-    <h1 class="sub-title">My work</h1>
+    <h1 class="sub-title" style="text-align: center;">My work</h1>
     <div class="work-list">
-
-      <div class="work">
-        <img src="images/cup island.png">
-        <div class="layer">
-          <h3>Cup Island</h3>
-          <p>feel free and be free</p>
-            <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <div data-slide="slide" class="slide">
+        <div class="slide-items">
+          <img src="./image2/Board.png" alt="Img 1">
+          <img src="./image2/NACE.png" alt="Img 2">
+          <img src="./image2/push.png" alt="Img 3">
+          <img src="./image2/rage.png" alt="Img 4">
         </div>
+        <nav class="slide-nav">
+          <div class="slide-thumb"></div>
+          <button class="slide-prev">Anterior</button>
+          <button class="slide-next">Próximo</button>
+        </nav>
       </div>
-
-      <div class="work">
-          <img src="images/work 2.png">
-          <div class="layer">
-            <h3>Self Motif</h3>
-              <p>this image describes your day to day 
-                life obsessed with procrastination</p>
-                <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="work">
-          <img src="images/work 3.png">
-          <div class="layer"><h3>Be Free</h3>
-            <p>this image describes the desire to be 
-              free in a wonderful, colorful world</p>
-              <a href="gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>          
-        </div>
     </div>
+    
     <a href="gallery.html" class="btn">See more</a>
   </div>
 </div>
+
+<script src="./slide-stories.js"></script>
 
 <!-------------contact------------>
 <div id="contact">
