@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphael Barasa - Portfolio Website</title>
+  <link rel="stylesheet" href="stile.css">
+   <link rel="stylesheet" href="slide.css">
+   <link rel="icon" href="image2/RB.png" type="image/x-icon"/>
+  <script src="https://kit.fontawesome.com/94779e1991.js" crossorigin="anonymous"></script> 
+  <meta name="google-site-verification" content="kC0xGldxKSa2QkSu0BxhxXWBkCm7ey5C-398dq-6vlE" />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark"onclick="closemenu()" ></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>All Things IT</p>
+        <h1>Hi, I'm <span>Raphael</span> <br> Barasa from Kenya</h1>
+      </div>
+    </div>
+  </div>
+
+  <!------------- About---------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Raphael Barasa is a seasoned professional in graphic design, Social media manager, web developer and AI data Admin. With a strong foundation in visual communication, Raphael brings creativity and technical expertise to every project. His portfolio showcases a diverse range of skills, from crafting captivating designs that tell compelling stories to developing user-friendly websites that prioritize functionality and aesthetics. </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Graphic Design</span><br> Designing graphic designs</li>
+            <li><span>Web design</span><br> web design and development</li>
+            <li><span>Social media management</span><br> content creation eg. Page management, Content creation.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2023 - 2024</span><br>IT analyst at Microsoft Training Institute</li>
+            <li><span>2022 - 2023</span><br> Data clerk at Demi systems</li>
+            <li><span>05/2020 - 07/2020</span><br> Technical support at Azuri Kenya</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span> 2024</span><br> Bsc. Information Technology </li>
+            <li><span> 2022</span><br> cert. Graphic design from IBM</li>
+            <li><span> 2021</span><br> cert. Microsoft Office from Microsoft</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------services---------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Graphic Design</h2>
+            <p>As a graphic designer, I craft visual concepts, create compelling designs, and transform ideas into impactful visual communication.</p>
+            <a href="gallery.html" class="btn">Gallery</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>As a web designer and developer, I create visually appealing, user-friendly websites with seamless functionality and responsive design.</p>
+            <a href="#contact">Contact</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Social Media management</h2>
+            <p>Creating engaging content for social media, I captivate audiences with dynamic storytelling, insightful reviews, and entertaining multimedia experiences.</p>
+            <a href="https://bit.ly/4fDVhyG" target ="_blank"" class="btn">Check it out</a>
+          </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------portfolio------------------------------------------->
+<div id="portfolio">
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title" style="text-align: center;">My work</h1>
+    <div class="work-list">
+      <div data-slide="slide" class="slide">
+        <div class="slide-items">
+          <img src="./image2/Board.png" alt="Img 1">
+          <img src="./image2/NACE.png" alt="Img 2">
+          <img src="./image2/push.png" alt="Img 3">
+          <img src="./image2/rage.png" alt="Img 4">
+        </div>
+        <nav class="slide-nav">
+          <div class="slide-thumb"></div>
+          <button class="slide-prev">Anterior</button>
+          <button class="slide-next">Próximo</button>
+        </nav>
+      </div>
+    </div>
+    
+    <a href="gallery.html" class="btn">See more</a>
+  </div>
+</div>
+
+<script src="./slide-stories.js"></script>
+
+<!-------------contact------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+
+        <a href="https://mail.google.com/mail/u/1/?view=cm&to=raphael.n.barasa@gmail.com" target="_blank">
+        <p><i class="fa-solid fa-paper-plane"></a></i>Email: raphael.n.barasa@gmail.com</p>
+        </a>
+        <p><i class="fa-solid fa-phone"></i>Tel: (254) 759-091-420</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61561370099981" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.pinterest.com/2apha3l/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://www.linkedin.com/in/raphael-barasa-6578a4318/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/rapha3lbrs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="" target="_blank" class="btn btn2">Download CV<i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" id="submit-form">
+  <input type="text" name="Name" placeholder="Your Name" required>
+  <input type="email" name="Email" placeholder="Your Email" required>
+  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+  <button type="submit" class="btn btn2">Submit</button>
+</form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright"><style></style>
+    © 2025 Developed and Designed by
+        <a href="https://www.linkedin.com/in/raphael-barasa-6578a4318/" class="underline">Raphael Barasa</a>
+  </div>
+</div>
+
+
+<script>
+  var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+      for(tabLink of tabLinks){
+          tabLink.classList.remove("active-link");
+      }
+      for(tabContent of tabContents){
+          tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu () {
+    sidemenu.style.right = "0";
+  }
+  function closemenu () {
+    sidemenu.style.right = "-200px";
+  }
+  
+</script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwtmOgup5GvCAA8yxId6iB6UH9KNCGrI-NS6v3qTNmUFOcXxla1pdOatWiY7fSmB2-yXA/exec';
+  const form = document.getElementById('submit-form');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => alert('Form submitted successfully!'))
+      .catch(error => alert('Error submitting form: ' + error));
+  });
+</script>
+
+</body>
+</html>
